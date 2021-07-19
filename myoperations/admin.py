@@ -75,4 +75,4 @@ class ngo_base_info_admin(admin.ModelAdmin):
 admin.site.register(ngo_base_info, ngo_base_info_admin)#注册
 '''
 # Register your models here.
-admin.site.register(person)
+# admin.site.register(person)

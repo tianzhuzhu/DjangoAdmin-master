@@ -25,8 +25,8 @@ class Operation(models.Model):
     # operation_type_choice = (('1', u'增ip'), ('2', u'减ip'))
     # operation_type = models.CharField(u"操作原因", choices=operation_type_choice, max_length=32)
 
-    reason=models.ForeignKey(reason_type,on_delete=models.CASCADE)
-    operation_type =models.ForeignKey(opetaion_type,on_delete=models.CASCADE)
+    reason=models.ForeignKey(reason_type,on_delete=models.CASCADE,verbose_name='操作原因')
+    operation_type =models.ForeignKey(opetaion_type,on_delete=models.CASCADE,verbose_name='操作类型')
 
     deal_code=models.CharField(max_length=32,default='',verbose_name='业务号码')
     vpn_deal_code=models.CharField(max_length=32,null=True,verbose_name='vpn业务号码')
